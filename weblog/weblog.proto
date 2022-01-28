@@ -1,0 +1,11 @@
+syntax = "proto3";
+package weblog;
+
+option go_package = "./weblog";
+
+message WebRequest {
+	int64 ts = 1;
+	string method = 2;
+	string url = 3;
+	uint64 delay = 4;
+}
